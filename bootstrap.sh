@@ -5,10 +5,10 @@ sudo apt-get update
 mkdir Downloads
 cd Downloads
 
-# install anaconda
-echo "installing miniconda"
-wget --quiet https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
-bash Miniconda-latest-Linux-x86_64.sh -b
+# install anaconda Python 3
+echo "installing miniconda Python 3"
+wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -b
 
-echo "setting up conda default python"
-echo "export PATH=/home/vagrant/miniconda2/bin:$PATH" >> /home/vagrant/.bashrc
+echo "setting up conda default python 3"
+echo "export PATH=/home/vagrant/miniconda3/bin:$PATH" >> /home/vagrant/.bashrc
